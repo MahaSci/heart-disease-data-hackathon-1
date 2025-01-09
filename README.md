@@ -1,20 +1,66 @@
-# Project XYZ
+#  ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+# Heart Disease Data Analytics Project 🫀
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+
+**Cardiovascular diseases remain the leading cause of death worldwide each year.**
+
+> According to the World Heart Federation, **"an estimated 80% of cardiovascular diseases... are preventable."** 
+
+This highlights the critical need for preventative strategies in reducing the number of global deaths. In order to address this issue, we must first examine the prevalent risk factors associated with heart disease.
+
+## Project Goal
+This goal of this project is to analyse health data to understand the relationship and trends of various risk factors such as _diabetes_, _cholesterol_ and _stress_ in relation to heart disease. 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+
+The dataset consists of 21 columns.
+| **Attributes**            |     **Attributes**        |     **Attributes**        |
+|---------------------------|---------------------------|---------------------------|
+| **Age**                       | **Diabetes** (Yes/No)                  | **Sleep Hours** (Hours)              |
+| **Gender** (Male, Female, Other)                   | **BMI** (kg/m^2)                       | **Sugar Consumption** (Low, Medium, High)         |
+| **Blood Pressure** (mmHg)            | **High Blood Pressure** (Yes/No)       | **Triglyceride Level** (mg/dL)        |
+| **Cholesterol Level** (mg/dL)       | **Low HDL Cholesterol** (Yes/No)       | **Fasting Blood Sugar** (mg/dL)       |
+| **Exercise Habits** (Low, Medium, High)          | **High LDL Cholesterol** (Yes/No)      | **CRP Level** (mg/L)                 |
+| **Smoking** (Yes/No)                  | **Alcohol Consumption** (Low, Medium, high)       | **Homocysteine Level** (µmol/L)        |
+| **Family Heart Disease** (Yes/No)      | **Stress Level** (Low, Medium, High)              | **Heart Disease Status** (Yes/No)      |
+
+<br>
+
+> BMI: Body Mass Index
+  
+> HDL Cholesterol: A "good" cholesterol that removes "bad" cholesterol from your blood
+
+> LDL Cholesterol: "Bad" cholesterol that increases risk of heart disease
+
+> Triglycerides: Type of fat in blood that increases risk of heart disease
+
+> CRP Level: Protein in the blood that indicates inflammation that can contribute to heart disease
+
 
 
 ## Business Requirements
-* Describe your business requirements
+### Objectives
+#### Primary Goal
+This goal of this project is to analyse health data to understand the relationship and trends of various risk factors such as _diabetes_, _cholesterol_ and _stress_ in relation to heart disease. 
+#### Intended Outcomes
+The intended outcome of this project is for healthcare providers to have a set of actionable insights, regarding risk factors for cardiovascular diseases, that they can then utilise to inform prevention strategies and programmes for patients.
 
+### Target Audience
+The target audience of this project includes:
+* Medical professionals
+* Government healthcare departments
+* Patients
+
+### Questions
+* Which risk factor is most strongly associated with heart disease?
+* What demographic groups are most at risk? (Age, Gender, BMI)
+* What are the trends of those diagnosed with heart disease?
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* Hypothesis 1: Individuals with Diabetes have a higher risk of heart disease
+Rationale: 
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
