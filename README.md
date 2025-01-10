@@ -55,63 +55,71 @@ The target audience of this project includes:
 
 ### Questions
 * Which risk factor is most strongly associated with heart disease?
-* What demographic groups are most at risk? (Age, Gender, BMI)
-* What are the trends of those diagnosed with heart disease?
+* What demographic groups are most at risk? (Age, BMI)
+
 
 ## Hypotheses and how to validate?
 ### Hypothesis 1: Individuals with diabetes are more likely to develop heart disease
 #### Visualisation
+A donut chart was used to visualise distribution of individuals with or without diabetes who have heart disease. Since there are only 2 categories, a donut chart will show whether there is a noticeable difference between the 2 groups.
 
 
 
 ### Hypothesis 2: Higher cholesterol levels have a positive correlation with heart disease diagnosis
 #### Visualisation
+A violin plot was used to show the distribution of the continuous type cholesterol level in individuals with and without heart disease.
 
 
 
 ### Hypothesis 3: Smokers are more likely to develop heart disease compared to non-smokers
 #### Visualisation
 
+A donut chart was used to visualise distribution of individuals smokers or non-smokers who have heart disease. Since there are only 2 categories, a donut chart will show whether there is a noticeable difference between the 2 groups.
 
 
 ### Hypothesis 4: Individuals with a family history of heart disease are more likely to develop heart disease themselves
 #### Visualisation
 
+A donut chart was used to visualise distribution of individuals with or without a family history of heart disease who have heart disease. Since there are only 2 categories, a donut chart will show whether there is a noticeable difference between the 2 groups.
 
 
 ### Hypothesis 5: Individuals with a higher BMI are more likely to develop heart disease
 #### Visualisation
-
-
+Hex bin visual was used to visualise the density of individuals with a higher BMI and positive diagnosis for heart disease.
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+- Phase 1: Data Collection and ETL
+    Extraction:
+        Data sourced from Kaggle and saved as a csv
+    Transformation:
+        Rows with missing and duplicate data was removed
+    Feature Engineering:
+        Categorical value of heart disease status was mapped into a numerical value/
+    Load:
+        Data was then loaded into a truncated csv file.
 
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+- Phase 2: Exploratory Analysis
+    Summary statistics were calculated
+    Distribution of the data was assessed using visualisation
+    Outliers were identified using visualisation
+
+- Phase 3: Visualisation
+    Histograms, Box plots, violin plots, correlation heatmaps.
+    Aim: understand distribution of the data, show the spread of the data and identify if there were any relationships between risk factors of heart disease.
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Statistical Testing
+* Multivariable visualisations
+
+How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* ChatGPT was used to find the best visualisation types based on the type of data i.e categorical, numerical. I also used ChatGPT to help me debug during section 2.3.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* All data was anonymised with identifying information removed and index numbers to identify each row.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
-## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
 ### What challenges did you face, and what strategies were used to overcome these challenges?
@@ -129,45 +137,29 @@ In [section 1.2.4 Identifying outlier values] during the count plot analysis for
 
      * Therefore, I resampled the data using a random state argument to ensure a more representative sample was analysed.
 
+#### 3. Mapping Error
+In [section 2.3] during the mapping process I made the error of not stripping white space from my heart disease status column which lead the mapping to fill the dataframe with NaN values. After searching through documentation I used the str.strip() function to do so and successfully map numeric values to my categorical ones
+
 
 ## What new skills or tools do you plan to learn next based on your project experience? 
-
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+In my next project I would love to learn more statistical tests that can help me to assess the validity of my findings with numerical measures.
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+* Pandas: data manipulation and analysis
+* Numpy: numerical operations
+* Seaborn: data visualisations
+* matplotlib : static visualisations
+* plotly: for interactive visualisations
+* Scipy: for statistical tests (chi-squared)
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+Chi Squared Statistical Test Method: https://campus.datacamp.com/courses/analyzing-survey-data-in-python/statistical-modeling?ex=8
 
 
+Pandas Documentation: https://pandas.pydata.org/docs/reference/api/pandas.Series.str.strip.html
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+
+## Acknowledgements 
+* I would like to express my gratitude to my facilitator, Vasi Pavaloi, for his valuable feedback and support throughout this project.
