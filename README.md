@@ -162,3 +162,4 @@ Pandas Documentation: https://pandas.pydata.org/docs/reference/api/pandas.Series
 
 ## Acknowledgements 
 * I would like to express my gratitude to my facilitator, Vasi Pavaloi, for his valuable feedback and support throughout this project.
+* I would like to express my gratitude to my subject expert, Niel McEwen, for his expertise and knowledge that helped me to make this project possible.
