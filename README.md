@@ -118,9 +118,6 @@ How did you use generative AI tools to help with ideation, design thinking and c
 ## Ethical considerations
 * All data was anonymised with identifying information removed and index numbers to identify each row.
 
-## Dashboard Design
-
-
 ## Development Roadmap
 ### What challenges did you face, and what strategies were used to overcome these challenges?
 #### 1. Iteration error with plotting
