@@ -135,7 +135,9 @@ In [section 1.2.4 Identifying outlier values] during the count plot analysis for
      * Therefore, I resampled the data using a random state argument to ensure a more representative sample was analysed.
 
 #### 3. Mapping Error
-In [section 2.3] during the mapping process I made the error of not stripping white space from my heart disease status column which lead the mapping to fill the dataframe with NaN values. After searching through documentation I used the str.strip() function to do so and successfully map numeric values to my categorical ones
+In [section 2.3] during the mapping process I made the error of not stripping white space from my heart disease status column which lead the mapping to fill the dataframe with NaN values. 
+
+    * After searching through documentation I used the str.strip() function to do so and successfully map numeric values to my categorical ones.
 
 
 ## What new skills or tools do you plan to learn next based on your project experience? 
