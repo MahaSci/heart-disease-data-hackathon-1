@@ -11,7 +11,7 @@
 This highlights the critical need for preventative strategies in reducing the number of global deaths. In order to address this issue, we must first examine the prevalent risk factors associated with heart disease.
 
 ## Project Goal
-This goal of this project is to analyse health data to understand the relationship and trends of various risk factors such as _diabetes_, _cholesterol_ and _stress_ in relation to heart disease. 
+This goal of this project is to analyse health data to understand the relationship and trends of various risk factors such as _diabetes_, _cholesterol_ and _BMI_ in relation to heart disease. 
 
 ## Dataset Content
 
