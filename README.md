@@ -115,19 +115,23 @@ The target audience of this project includes:
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-    * In [section 1.2.4 Identifying outlier values] I struggled with attempting to iterate through the list of columns and plot on multiple axes.
-    * ![boxploterror]("/workspace/heart-disease-data-hackathon-1/BoxPlotError.png")
-        * I got around this by simply plotting each box plot seperately. 
+### What challenges did you face, and what strategies were used to overcome these challenges?
+#### 1. Iteration error with plotting
+In [section 1.2.4 Identifying outlier values] I struggled with attempting to iterate through the list of columns and plot on multiple axes.
 
-    * In [section 1.2.4 Identifying outlier values] during the count plot analysis for outliers, it was made apparent that 100% of the data selected had 'No' for heart disease diagnosis - this sample of data will not be fruitful for analysis therefore I resampled the data using a random state argument to ensure a more representative sample was analysed.
-    * ![boxploterror]("/workspace/heart-disease-data-hackathon-1/CountPlotSampleError.png") 
+<img src="BoxPlotError.png" alt="boxploterror" width="500"/>
+
+    * I got around this by simply plotting each box plot seperately. 
+
+#### 2. Sample error
+In [section 1.2.4 Identifying outlier values] during the count plot analysis for outliers, it was made apparent that 100% of the data selected had 'No' for heart disease diagnosis 
+
+<img src="CountPlotSampleError.png" alt="countplotsampleerror" width="400"/>
+
+     * Therefore, I resampled the data using a random state argument to ensure a more representative sample was analysed.
 
 
-
-    
-
-* What new skills or tools do you plan to learn next based on your project experience? 
+## What new skills or tools do you plan to learn next based on your project experience? 
 
 ## Deployment
 ### Heroku
