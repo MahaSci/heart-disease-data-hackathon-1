@@ -62,27 +62,26 @@ The target audience of this project includes:
 ### Hypothesis 1: Individuals with diabetes are more likely to develop heart disease
 #### Visualisation
 
-#### Statistical Test
+
 
 ### Hypothesis 2: Higher cholesterol levels have a positive correlation with heart disease diagnosis
 #### Visualisation
 
-#### Statistical Test
+
 
 ### Hypothesis 3: Smokers are more likely to develop heart disease compared to non-smokers
 #### Visualisation
 
-#### Statistical Test
+
 
 ### Hypothesis 4: Individuals with a family history of heart disease are more likely to develop heart disease themselves
 #### Visualisation
 
-#### Statistical Test
 
-### Hypothesis 5: Individuals with low exercise habits and a higher BMI are more likely to develop heart disease
+
+### Hypothesis 5: Individuals with a higher BMI are more likely to develop heart disease
 #### Visualisation
 
-#### Statistical Test
 
 
 ## Project Plan
